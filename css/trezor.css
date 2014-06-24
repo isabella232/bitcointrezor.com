@@ -1,0 +1,68 @@
+h1 {
+	font-size: 2.5em;
+}
+
+#banner .row {
+	padding: 0;
+}
+
+#banner h3 {
+	font-size: 1.7em;
+}
+
+#menu {
+	padding-top: 1.5em;
+}
+
+#menu li {
+	display: inline;
+	padding: 0.5em;
+}
+
+#menu li span {
+	color: #9cc015;
+}
+
+#menu a {
+	color: white;
+	font-size: 1em;
+}
+
+#logo {
+	margin-bottom: 1em;
+}
+
+#newsletter form {
+	display: inline;
+}
+
+.video {
+	float: left;
+	margin: 0 40px 20px 0;
+	position: relative;
+	width: 560px;
+}
+
+.video_rest {
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
+	width: 340px;
+}
+
+blockquote.row1 q {
+	height: 16em;
+}
+
+blockquote.row2 q {
+	height: 10em;
+}
+
+blockquote.row3 q {
+	height: 9em;
+}
+
+#features i {
+	width: 56px;
+	text-align: center;
+}
