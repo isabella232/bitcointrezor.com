@@ -12,6 +12,7 @@
   <![endif]-->
   <link href="css/style.css" media="screen, projection" rel="stylesheet">
   <link href="css/trezor.css" media="screen, projection" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!--[if IE 7]>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.css" rel="stylesheet">
@@ -41,8 +42,11 @@
           </ul>
         </div>
       </div>
-      <div class="video">
-        <iframe frameborder="0" height="315" src="//player.vimeo.com/video/68092369" width="560"></iframe>
+      <div class="video carousel">
+        <div><img src="images/carousel_1.png" alt="carousel_1" /></div>
+        <div><img src="images/carousel_2.png" alt="carousel_2" /></div>
+        <div><img src="images/carousel_3.png" alt="carousel_3" /></div>
+        <div><img src="images/carousel_4.png" alt="carousel_4" /></div>
       </div>
       <div class="video_rest last">
         <div>
@@ -244,6 +248,19 @@ SatoshiLabs: Alena, Marek and Pavol.</p>
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-39404087-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 6000,
+            arrows: false,
+            speed: 1000
+          });
+      });
   </script>
 </body>
 </html>
