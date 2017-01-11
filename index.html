@@ -45,18 +45,21 @@
     var aParam = getParameterByName('a');
     if (aParam) {
       window.location = urlRedirect + '?a=' + aParam;
+      return false;
     }
 
     // second priority
     var hParam = getParameterByName('h');
     if (hParam) {
       window.location = urlRedirect + '?h=' + hParam;
+      return false;
     }
 
     // third priority
     var referrer = domain(document.referrer);
     if (referrer) {
       window.location = urlRedirect + '?h=' + hexlify(domainKey(referrer));
+      return false;
     }
 
     // default
